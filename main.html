@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Codetrek Robotics – Coding & Robotics Adventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --color-bg: #f7f6f2;
+      --color-surface: #ffffff;
+      --color-text: #222222;
+      --color-muted: #555555;
+      --color-primary: #01696f;
+      --space-2: 0.5rem;
+      --space-4: 1rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --radius-md: 0.5rem;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--color-surface);
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-4);
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    nav a {
+      margin-left: var(--space-4);
+      text-decoration: none;
+      color: var(--color-text);
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      color: var(--color-primary);
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-4);
+    }
+    section {
+      margin-bottom: var(--space-8);
+    }
+    h1, h2 {
+      margin-bottom: var(--space-4);
+    }
+    .hero {
+      text-align: left;
+    }
+    .hero p {
+      max-width: 42rem;
+      color: var(--color-muted);
+      margin-bottom: var(--space-4);
+    }
+    .btn-primary {
+      display: inline-block;
+      padding: var(--space-2) var(--space-6);
+      background: var(--color-primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+    }
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-4);
+    }
+    .card {
+      background: var(--color-surface);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      border: 1px solid #e0e0e0;
+    }
+    .card h3 {
+      margin-bottom: var(--space-2);
+    }
+    .card ul {
+      padding-left: 1.1rem;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-4);
+    }
+    .columns h3 {
+      margin-bottom: var(--space-2);
+    }
+    .about p, .contact p {
+      max-width: 42rem;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 0.9rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: var(--space-4);
+      border-radius: var(--radius-md);
+      border: 1px solid #ccc;
+      font: inherit;
+    }
+    footer {
+      text-align: center;
+      padding: var(--space-6);
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+    @media (max-width: 600px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: var(--space-2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="logo">CODETREK ROBOTICS</div>
+      <nav>
+        <a href="#programs">Programs</a>
+        <a href="#schools">Schools & Parents</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Coding & Robotics Adventures for Young Innovators</h1>
+      <p>
+        Codetrek Robotics brings engaging, project‑based coding and robotics programs to elementary and middle school
+        students in Connecticut. Learners build real projects, explore STEM careers, and grow confidence as creators.
+      </p>
+      <a href="#contact" class="btn-primary">Request Information</a>
+    </section>
+
+    <section id="programs">
+      <h2>Programs</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Elementary Coding & Robotics</h3>
+          <ul>
+            <li>Intro to block‑based coding and basic robotics.</li>
+            <li>Hands‑on builds with kid‑friendly kits.</li>
+            <li>After‑school clubs, camps, and in‑school enrichment.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Middle School Robotics Lab</h3>
+          <ul>
+            <li>Intermediate robotics and programming concepts.</li>
+            <li>Project‑based challenges aligned with STEM standards.</li>
+            <li>Competition‑style builds and collaborative team work.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Special Workshops & Summer Programs</h3>
+          <ul>
+            <li>Custom coding/robotics experiences for schools and groups.</li>
+            <li>STEM career exploration and design challenges.</li>
+            <li>Flexible formats for districts, libraries, and community partners.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="schools">
+      <h2>For Schools & Parents</h2>
+      <div class="columns">
+        <div>
+          <h3>Schools & Districts</h3>
+          <p>
+            Partner with Codetrek Robotics to bring turnkey coding and robotics programs to your students. Options
+            include in‑school enrichment, after‑school clubs, and short‑term project residencies aligned with your STEM
+            goals.
+          </p>
+        </div>
+        <div>
+          <h3>Families</h3>
+          <p>
+            Families can enroll children in after‑school clubs, camps, and weekend workshops. Programs are designed
+            for beginners and experienced coders alike, with clear pathways from basic coding to advanced robotics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Codetrek Robotics</h2>
+      <p>
+        Codetrek Robotics was founded by a middle school STEM teacher with over 12 years of experience teaching PLTW
+        Flight and Space, Green Architecture, Magic of Electrons, and technology courses in Massachusetts and
+        Connecticut. Programs blend classroom‑tested pedagogy with fun, hands‑on robotics and coding challenges.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Interested in bringing coding and robotics programs to your school or community, or enrolling your child?
+        Reach out below and we’ll follow up with details and scheduling.
+      </p>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your name">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your school, family, or interest."></textarea>
+        <button type="submit" class="btn-primary">Send (non‑functional demo)</button>
+      </form>
+      <p style="font-size:0.85rem; color:var(--color-muted); margin-top:var(--space-2);">
+        *This demo form doesn’t send emails yet. On your live site, you can connect it to an email service or Google Form.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Codetrek Robotics. All rights reserved.
+  </footer>
+
+  <script>
+    // Update year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
